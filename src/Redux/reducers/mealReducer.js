@@ -11,7 +11,7 @@ const initialState = {
   },
 };
 
-const mealReducer = (state, action) => {
+const mealReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_MEAL:
       return state;

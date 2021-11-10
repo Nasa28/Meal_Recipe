@@ -3,7 +3,7 @@ import mealReducer from './mealReducer';
 import filterReducer from './filter';
 
 const rootReducer = combineReducers({
-  meal: mealReducer,
+  meals: mealReducer,
   filter: filterReducer,
 });
 

@@ -1,12 +1,12 @@
-import * as actions from '../actions/constants';
+// import * as actions from '../constants/actionTypes';
 
-const filterReducer = (state = 'All', action) => {
-  switch (action.type) {
-    case actions.CHANGE_FILTER:
-      return action.filter;
-    default:
-      return state;
-  }
-};
+// const filterReducer = (state = 'All', action) => {
+//   switch (action.type) {
+//     case actions.:
+//       return action.filter;
+//     default:
+//       return state;
+//   }
+// };
 
-export default filterReducer;
+// export default filterReducer;
