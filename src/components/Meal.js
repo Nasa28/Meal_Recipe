@@ -1,11 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import MealDetails from './MealDetails';
 
 const Meal = () => {
-  return (
-    <div>
-      <h2>Meal</h2>
-    </div>
-  )
-}
+  const meals = useSelector((state) => state.recipe.myMeals);
+  const renderList = meals.map((meal) => {
+    const {
+      idCategory,
+      strCategory,
+      strCategoryThumb,
+      strCategoryDescription,
+    } = meal;
+    return (
+      <div key={idCategory}>
+        <Link to={`/meal/${idCategory}`}>
+          <h3>{strCategory}</h3>
+          <p>{strCategoryDescription}</p>
+          <img src={strCategoryThumb} alt={strCategory} />
+        </Link>
+       
+      </div>
+    );
+  });
 
-export default Meal
+  return <>{renderList}</>;
+};
+
+export default Meal;

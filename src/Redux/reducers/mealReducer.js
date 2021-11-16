@@ -1,20 +1,13 @@
-import actionTypes from '../constants/actionTypes';
+import { actionTypes } from '../constants/actionTypes';
 
 const initialState = {
-  meal: {
-    id: 1,
-    title: 'buttermilk pancakes',
-    category: 'breakfast',
-    price: 15.99,
-    img: './images/item-1.jpeg',
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-  },
+  myMeals: [],
 };
 
-const mealReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case actionTypes.SET_MEAL:
-      return state;
+const mealReducer = (state = initialState, { type, payload }) => {
+  switch (type) {
+    case actionTypes.SET_MEALS:
+      return { ...state, myMeals: payload };
     default:
       return state;
   }
