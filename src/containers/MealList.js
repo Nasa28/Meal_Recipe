@@ -2,8 +2,9 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Meal from '../components/Meal';
-import { setMeals } from '../Redux/Actions/mealActions';
+import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
 import Loading from '../components/Loading';
+import CategoryFilter from '../components/CategoryFilter';
 
 const MealList = () => {
   const [loading, setLoading] = useState(true);
@@ -33,9 +34,12 @@ const MealList = () => {
       </main>
     );
   }
-
+  const handleFilterChange = (e) => {
+    dispatch(changeFilter(e.target.value));
+  };
   return (
     <div>
+      <CategoryFilter handleFilterChange={handleFilterChange} />
       <Meal />;
     </div>
   );

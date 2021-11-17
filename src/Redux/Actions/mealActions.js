@@ -6,3 +6,9 @@ export const setMeals = (meals) => {
     payload: meals,
   };
 };
+
+export const changeFilter = (filter) => ({
+  type: actionTypes.CHANGE_FILTER,
+
+  filter,
+});
