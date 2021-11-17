@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import MealDetails from './MealDetails';
+
 
 const Meal = () => {
   const meals = useSelector((state) => state.recipe.myMeals);
