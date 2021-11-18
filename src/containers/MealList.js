@@ -8,9 +8,6 @@ import CategoryFilter from '../components/CategoryFilter';
 import Select from '../components/Select';
 
 const MealList = () => {
-  const recipes = useSelector((state) => state.setcategory.new);
-  const [recipe, setRecipe] = useState(recipes);
-  console.log(recipe);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
@@ -48,15 +45,11 @@ const MealList = () => {
   return (
     <>
       <div>
-        {recipe ? (
-          <div>
-            <CategoryFilter handleFilterChange={handleFilterChange} />
-
-            <Meal />
-          </div>
-        ) : (
-          <div></div>
-        )}
+        <div>
+          <CategoryFilter handleFilterChange={handleFilterChange} />
+          <Select />
+          <Meal />
+        </div>
       </div>
     </>
   );

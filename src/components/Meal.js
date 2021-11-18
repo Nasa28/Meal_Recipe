@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const Meal = () => {
   const meals = useSelector((state) => state.recipe.myMeals);
   const renderList = meals.map((meal) => {
+    
     const {
       idCategory,
       strCategory,
