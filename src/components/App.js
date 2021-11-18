@@ -4,6 +4,7 @@ import '../styles/App.css';
 import NavBar from '../components/NavBar';
 import MealList from '../containers/MealList';
 import MealDetails from './MealDetails';
+
 function App() {
   return (
     <div className="App">
