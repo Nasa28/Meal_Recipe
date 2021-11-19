@@ -1,0 +1,16 @@
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.select {
+  margin-left: 20px;
+  padding: 5px 80px 5px 0;
+}
+
+.category h3 {
+  color: rgb(102, 92, 92);
+  font-size: 24px;
+}

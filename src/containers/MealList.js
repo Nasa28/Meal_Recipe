@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Loading from '../components/Loading';
 import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
 import Meal from '../components/Meal';
-import '../styles/MealList.css'
+import '../styles/MealList.css';
 
 const MealList = () => {
   const myCategory = useSelector((state) => state.filter);
@@ -37,7 +37,7 @@ const MealList = () => {
       axios
         .get(url)
         .then((response) => {
-          const ability = response.data.meals
+          const ability = response.data.meals;
           const newCat = ability.map((cat) => ({
             ...cat,
             category: `${myCategory}`,
@@ -74,17 +74,25 @@ const MealList = () => {
   );
   return (
     <>
-      <div>
-        <select onChange={handleFilterChange} name="filter">
-          {filters.map((filter) => (
-            <option name="category" value={filter} key={filter}>
-              {filter}
-            </option>
-          ))}
-        </select>
+      <div className="category">
+        <h3>Choose Category</h3>
         <div>
-          <Meal filteredMeals={filteredMeals} />
+          <select
+            className="select"
+            onChange={handleFilterChange}
+            name="filter"
+          >
+            {filters.map((filter) => (
+              <option name="category" value={filter} key={filter}>
+                {filter}
+              </option>
+            ))}
+          </select>
         </div>
+      </div>
+
+      <div>
+        <Meal filteredMeals={filteredMeals} />
       </div>
     </>
   );
