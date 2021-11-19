@@ -2,8 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import { categories } from '../Redux/Actions/mealActions';
-import Select from './Select';
 
 const CategoryFilter = ({ handleFilterChange }) => {
   const filters = [
@@ -26,6 +26,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
   const myCategory = useSelector((state) => state.filter);
   const recipes = useSelector((state) => state.setcategory.new.meals);
   const [recipe, setRecipe] = useState(recipes);
+  console.log(recipe);
   const dispatch = useDispatch();
   const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${myCategory}`;
 
@@ -50,6 +51,20 @@ const CategoryFilter = ({ handleFilterChange }) => {
             </option>
           ))}
         </select>
+      </div>
+      <div>
+        {recipe &&
+          recipes.map((meal) => {
+            const { idMeal, strMeal, strMealThumb } = meal;
+            return (
+              <div key={idMeal}>
+                <Link to={`/meal/${idMeal}`}>
+                  <img src={strMealThumb} alt={strMeal} />
+                  <h3>{strMeal}</h3>
+                </Link>
+              </div>
+            );
+          })}
       </div>
     </>
   );

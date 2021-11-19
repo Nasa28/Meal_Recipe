@@ -1,13 +1,13 @@
 import { actionTypes } from '../constants/actionTypes';
 
 const initialState = {
-  new: [],
+  detail: [],
 };
 
 const categoryReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case actionTypes.CATEGORY_FILTER:
-      return { ...state, new: payload };
+      return { ...state, detail: payload };
     default:
       return state;
   }

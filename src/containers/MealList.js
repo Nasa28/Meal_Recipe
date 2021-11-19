@@ -1,58 +1,57 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import Meal from '../components/Meal';
-import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
-import Loading from '../components/Loading';
-import CategoryFilter from '../components/CategoryFilter';
-import Select from '../components/Select';
+// import axios from 'axios';
+// import React, { useState, useEffect } from 'react';
+// import { useDispatch, useSelector } from 'react-redux';
+// import Meal from '../components/Meal';
+// import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
+// import Loading from '../components/Loading';
+// import CategoryFilter from '../components/CategoryFilter';
 
-const MealList = () => {
-  const [loading, setLoading] = useState(true);
-  const dispatch = useDispatch();
-  const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
-  const fetchMeals = async () => {
-    setLoading(true);
-    try {
-      const response = await axios.get(url);
-      dispatch(setMeals(response.data.categories));
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  };
+// const MealList = () => {
+//   const [loading, setLoading] = useState(true);
+//    const dispatch = useDispatch();
+//   // const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
-  useEffect(() => {
-    fetchMeals();
-  }, []);
+//   // const fetchMeals = async () => {
+//   //   setLoading(true);
+//   //   try {
+//   //     const response = await axios.get(url);
+//   //     dispatch(setMeals(response.data.categories));
+//   //     setLoading(false);
+//   //   } catch (error) {
+//   //     console.log(error);
+//   //     setLoading(false);
+//   //   }
+//   // };
 
-  const handleFilterChange = (e) => {
-    e.preventDefault();
+//   // useEffect(() => {
+//   //   fetchMeals();
+//   // }, []);
 
-    dispatch(changeFilter(e.target.value));
-  };
+//   const handleFilterChange = (e) => {
+//     e.preventDefault();
 
-  if (loading) {
-    return (
-      <main>
-        <Loading />;
-      </main>
-    );
-  }
+//     dispatch(changeFilter(e.target.value));
+//   };
 
-  return (
-    <>
-      <div>
-        <div>
-          <CategoryFilter handleFilterChange={handleFilterChange} />
-          <Select />
-          <Meal />
-        </div>
-      </div>
-    </>
-  );
-};
+//   if (loading) {
+//     return (
+//       <main>
+//         <Loading />;
+//       </main>
+//     );
+//   }
 
-export default MealList;
+//   return (
+//     <>
+//       <div>
+//         <div>
+//           <CategoryFilter handleFilterChange={handleFilterChange} />
+//           <Meal />
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default MealList;
