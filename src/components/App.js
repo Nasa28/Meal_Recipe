@@ -4,7 +4,6 @@ import '../styles/App.css';
 import NavBar from '../components/NavBar';
 import MealList from '../containers/MealList';
 import MealDetails from './MealDetails';
-import TestCode from '../containers/TestCode';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<TestCode />} />
+          <Route exact path="/" element={<MealList />} />
           <Route path="/Meal/:id" element={<MealDetails />} />
           <Route>404 Not Found!</Route>
         </Routes>
