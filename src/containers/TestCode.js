@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
 import Meal from '../components/Meal';
@@ -30,7 +29,7 @@ const TestCode = () => {
   ];
 
   const myFetch = () => {
-    const allCategoriesResult = [];
+    const result = [];
     filters.map((myCategory) => {
       const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${myCategory}`;
 
@@ -42,12 +41,12 @@ const TestCode = () => {
             ...cat,
             category: `${myCategory}`,
           }));
-          allCategoriesResult.push(...newCat);
-          dispatch(setMeals(allCategoriesResult));
+          result.push(...newCat);
+          dispatch(setMeals(result));
           setLoading(false);
         })
         .catch((err) => {
-          console.log(err);
+          return err;
         });
     });
   };
