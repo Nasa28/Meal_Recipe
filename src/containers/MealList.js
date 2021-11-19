@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Loading from '../components/Loading';
 import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
 import Meal from '../components/Meal';
+import '../styles/MealList.css'
 
 const MealList = () => {
   const myCategory = useSelector((state) => state.filter);

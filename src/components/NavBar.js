@@ -1,8 +1,11 @@
+import '../styles/NavBar.css';
 const NavBar = () => {
   return (
-    <div>
-      <h1>Meal Recipes</h1>
-      
+    <div className="nav">
+      <header>
+        <h1 className="heading">CHOP-LIFE KITCHEN</h1>
+      </header>
+      <div></div>
     </div>
   );
 };

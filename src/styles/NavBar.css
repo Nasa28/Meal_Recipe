@@ -1,0 +1,14 @@
+.nav {
+  background-color: rgb(136, 221, 136);
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 25px;
+  font-size: xx-large;
+  font-family: 'Lobster', cursive;
+  color: rgb(68, 66, 66);
+  letter-spacing: 3px;
+}
