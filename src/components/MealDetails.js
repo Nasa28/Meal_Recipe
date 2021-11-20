@@ -5,6 +5,7 @@ import { useParams } from 'react-router';
 import { categories } from '../Redux/Actions/mealActions';
 import Loading from './Loading';
 import '../styles/Details.css';
+
 const MealDetails = () => {
   const details = useSelector((state) => state.setcategory.detail.meals);
   const [loading, setLoading] = useState(true);
@@ -12,11 +13,9 @@ const MealDetails = () => {
   const { id } = useParams();
   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`;
   const fetchDetails = async () => {
-    try {
-      const res = await axios.get(url);
-      dispatch(categories(res.data.meals[0]));
-      setLoading(false);
-    } catch (error) {}
+    const res = await axios.get(url);
+    dispatch(categories(res.data.meals[0]));
+    setLoading(false);
   };
 
   useEffect(() => {

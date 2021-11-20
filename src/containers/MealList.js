@@ -34,7 +34,7 @@ const MealList = () => {
     filters.map((myCategory) => {
       const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${myCategory}`;
 
-      axios
+      return axios
         .get(url)
         .then((response) => {
           const ability = response.data.meals;
@@ -46,9 +46,7 @@ const MealList = () => {
           dispatch(setMeals(result));
           setLoading(false);
         })
-        .catch((err) => {
-          return err;
-        });
+        .catch((err) => err);
     });
   };
 
@@ -59,7 +57,8 @@ const MealList = () => {
   if (loading) {
     return (
       <main>
-        <Loading />;
+        <Loading />
+        ;
       </main>
     );
   }
