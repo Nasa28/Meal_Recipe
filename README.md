@@ -1,4 +1,4 @@
-# MEAL RECIPE APP
+# MEAL RECIPE APP (CHOP-LIFE KITCHEN)
 
 > MEAL RECIPE APP is a meal catalogue app built with React and Redux. This app fetches data from MealDB API and displays the data on the page. The user can filter the foods according to categories.
 
