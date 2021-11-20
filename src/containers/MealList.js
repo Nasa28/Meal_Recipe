@@ -90,9 +90,20 @@ const MealList = () => {
           </select>
         </div>
       </div>
-
-      <div>
-        <Meal filteredMeals={filteredMeals} />
+      <div className="container">
+        <div className="meal-card">
+          {filteredMeals.map((meal) => {
+            const { idMeal, strMeal, strMealThumb } = meal;
+            return (
+              <Meal
+                key={idMeal}
+                name={strMeal}
+                image={strMealThumb}
+                id={idMeal}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );

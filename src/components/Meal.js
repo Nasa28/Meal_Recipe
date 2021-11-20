@@ -1,22 +1,20 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import '../styles/Meal.css';
 
-const Meal = ({ filteredMeals }) => {
-  const meals = useSelector((state) => state.recipe.myMeals);
-  const renderList = filteredMeals.map((meal) => {
-    const { idMeal, strMeal, strMealThumb } = meal;
-    return (
-      <div key={idMeal}>
-        <Link to={`/meal/${idMeal}`}>
-          <img src={strMealThumb} alt={strMeal} />
-          <h3>{strMeal}</h3>
-        </Link>
-      </div>
-    );
-  });
-
-  return <>{renderList}</>;
+const Meal = ({ id, name, image }) => {
+  return (
+    <div className="meal-card " key={id}>
+      <Link className="cards " to={`/meal/${id}`}>
+        <div>
+          <img className="image" src={image} alt={name} />
+        </div>
+        <div>
+          <h3 className="title">{name}</h3>
+        </div>
+      </Link>
+    </div>
+  );
 };
 
 export default Meal;

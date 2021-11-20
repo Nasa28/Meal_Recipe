@@ -1,0 +1,27 @@
+
+.meal-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  width: 250px;
+  height: 300px;
+  font-size: 16px;
+  border: solid rgb(177, 173, 173);
+  border-radius: 10px;
+}
+
+.image {
+  width: 230px;
+  height: 230px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.cards {
+  text-decoration: none;
+}
