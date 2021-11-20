@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# MEAL RECIPE APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> MEAL RECIPE APP is a meal catalogue app built with React and Redux. This app fetches data from MealDB API and displays the data on the page. The user can filter the foods according to categories.
 
-## Available Scripts
+NB: In this React Capstone project, I was asked to build a CATALOGUE OF DOG CLOTHES but after an unsuccessful search for an API for the app online, i decided to use MealDB API instead.
 
-In the project directory, you can run:
+![screenshot](readme.png)
 
-### `yarn start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js
+- React
+- React-DOM
+- Redux
+- CSS
+- ES6
+- npm
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `yarn test`
+To run this project locally, make sure you have done the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Installed Node.js, more information [here](https://nodejs.org/en/)
+- Installed Node package manager
 
-### `yarn build`
+- Get a copy of the project by running
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+ git clone git@github.com:Nasa28/Meal_Recipe.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+on your terminal.
 
-### `yarn eject`
+### Setup, Installations and usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- cd into the project
+- open the project using code editor of your choice
+- Run `npm install` to install all dependencies
+- Run `npm start` to start the server
+- Open your prefered browser
+- Visit `http://localhost:3000/`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Live version
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Live Version]()
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## RUN TEST
 
-## Learn More
+```
+npm test
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👨‍💻 **Kalu Chinasa Agu**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Github: [@Nasa28](https://github.com/Nasa28)
+- Twitter: [@Ultimate_Nasa](https://twitter.com/Ultimate_Nasa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kalu-chinasa-agu-a15080103/)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues, and feature requests are welcome!
 
-### Making a Progressive Web App
+Feel free to check the [issues page](https://github.com/Nasa28/Meal_Recipe/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgements
 
-### Advanced Configuration
+[Microverse](https://www.microverse.org/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://github.com/stevenvachon/broken-link-checker/blob/main/license) licensed.
