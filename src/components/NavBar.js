@@ -16,7 +16,7 @@ const NavBar = () => {
           </Link>
         </header>
         <div>
-          <h3>About</h3>
+          <h3 className="heading">About</h3>
         </div>
       </div>
     </>
