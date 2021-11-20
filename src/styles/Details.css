@@ -1,0 +1,16 @@
+.details-page {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.img {
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+}
+
+.description {
+  line-height: 2;
+  margin: 40px
+}
