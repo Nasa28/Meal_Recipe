@@ -4,30 +4,15 @@ import { useSelector, useDispatch } from 'react-redux';
 import Loading from '../components/Loading';
 import { setMeals, changeFilter } from '../Redux/Actions/mealActions';
 import Meal from '../components/Meal';
+import filters from '../components/filterArray';
 import '../styles/MealList.css';
+import CategoryFilter from '../components/CategoryFilter';
 
 const MealList = () => {
   const myCategory = useSelector((state) => state.filter);
   const recipes = useSelector((state) => state.recipe.myMeals);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-  const filters = [
-    'All',
-    'Beef',
-    'Breakfast',
-    'Chicken',
-    'Dessert',
-    'Goat',
-    'Lamb',
-    'Miscellaneous',
-    'Pasta',
-    'Pork',
-    'Seafood',
-    'Side',
-    'Starter',
-    'Vegan',
-    'Vegetarian',
-  ];
 
   const myFetch = () => {
     const result = [];
@@ -75,17 +60,7 @@ const MealList = () => {
       <div className="category">
         <h3 data-testid="category">Choose Category</h3>
         <div>
-          <select
-            className="select"
-            onChange={handleFilterChange}
-            name="filter"
-          >
-            {filters.map((filter) => (
-              <option name="category" value={filter} key={filter}>
-                {filter}
-              </option>
-            ))}
-          </select>
+          <CategoryFilter handleFilterChange={handleFilterChange} />
         </div>
       </div>
       <div className="container">
