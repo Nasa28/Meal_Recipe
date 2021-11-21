@@ -8,4 +8,9 @@ describe('Loading Component', () => {
     render(<Loading />);
     expect(screen.getByText('loading...')).toBeInTheDocument();
   });
+
+  it('Renders only loading', () => {
+    render(<Loading />);
+    expect(screen.queryByText('Welcome')).not.toBeInTheDocument();
+  });
 });

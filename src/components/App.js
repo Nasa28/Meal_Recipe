@@ -14,9 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<MealList />} />
           <Route path="/Meal/:id" element={<MealDetails />} />
-          <Route path="*" element={<Error />}>
-            404 Not Found!
-          </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>
