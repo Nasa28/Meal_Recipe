@@ -43,7 +43,7 @@ on your terminal.
 
 ## Live version
 
-[Live Version]()
+[Live Version](https://chop-life.netlify.app/)
 
 ## RUN TEST
 
