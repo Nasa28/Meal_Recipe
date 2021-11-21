@@ -11,11 +11,9 @@ describe('Meal component tests', () => {
   render(
     <Router>
       <Meal
-        id={'52874'}
-        name={'Beef and Mustard Pie'}
-        image={
-          'https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg'
-        }
+        id="52874"
+        name="Beef and Mustard Pie"
+        image="https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg"
       />
     </Router>,
   );

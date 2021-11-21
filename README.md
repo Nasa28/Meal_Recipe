@@ -70,6 +70,8 @@ Feel free to check the [issues page](https://github.com/Nasa28/Meal_Recipe/issue
 
 [Microverse](https://www.microverse.org/)
 
+[Denys Chagaida on Behance](https://www.behance.net/chagaida)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
