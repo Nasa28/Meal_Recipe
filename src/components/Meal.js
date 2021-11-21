@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Meal.css';
 
 const Meal = ({ id, name, image }) => (
-  <div className="meal-card " key={id}>
+  <div className="meal-card " data-testid="meal-card" key={id}>
     <Link className="cards " to={`/meal/${id}`}>
       <div>
         <img className="image" src={image} alt={name} />
@@ -16,7 +16,7 @@ const Meal = ({ id, name, image }) => (
 );
 
 Meal.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };

@@ -56,9 +56,8 @@ const MealList = () => {
 
   if (loading) {
     return (
-      <main>
+      <main data-testid="loading">
         <Loading />
-        ;
       </main>
     );
   }
@@ -74,7 +73,7 @@ const MealList = () => {
   return (
     <>
       <div className="category">
-        <h3>Choose Category</h3>
+        <h3 data-testid="category">Choose Category</h3>
         <div>
           <select
             className="select"

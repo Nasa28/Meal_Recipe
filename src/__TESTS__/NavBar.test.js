@@ -14,24 +14,24 @@ describe('NavBar component', () => {
     </Router>,
   );
 
-  const navElement = screen.getByTestId('nav');
-  it('Renders the Title', () => {
-    expect(navElement).toBeInTheDocument();
+  const nav = screen.getByTestId('nav');
+  it('Renders the Navbar', () => {
+    expect(nav).toBeInTheDocument();
+  });
+
+  it('Renders the Home', () => {
+    expect(nav).toHaveTextContent('Home');
   });
 
   it('Renders the Title', () => {
-    expect(navElement).toHaveTextContent('Home');
+    expect(nav).toHaveTextContent('CHOP-LIFE KITCHEN');
   });
 
-  it('Renders the Title', () => {
-    expect(navElement).toHaveTextContent('CHOP-LIFE KITCHEN');
+  it('Renders the About', () => {
+    expect(nav).toHaveTextContent('About');
   });
 
-  it('Renders the Title', () => {
-    expect(navElement).toHaveTextContent('About');
-  });
-
-  it('Renders the Title', () => {
-    expect(navElement).not.toHaveTextContent('Contact');
+  it('Does not render Element not on the page', () => {
+    expect(nav).not.toHaveTextContent('Contact');
   });
 });
