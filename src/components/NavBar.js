@@ -4,7 +4,7 @@ import '../styles/NavBar.css';
 
 const NavBar = () => (
   <>
-    <div className="nav">
+    <nav data-testid="nav" className="nav">
       <div>
         <Link className="heading" to="/" onClick={() => MealList()}>
           <h1>Home</h1>
@@ -18,7 +18,7 @@ const NavBar = () => (
       <div>
         <h3 className="heading">About</h3>
       </div>
-    </div>
+    </nav>
   </>
 );
 
