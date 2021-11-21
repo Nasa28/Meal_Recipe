@@ -26,4 +26,8 @@ describe('Meal component tests', () => {
   test('Component should contain Beef and Mustard Pie', () => {
     expect(meal).toHaveTextContent('Beef and Mustard Pie');
   });
+
+  test('Component should contain Beef and Mustard Pie', () => {
+    expect(meal).not.toHaveTextContent('Welcome food');
+  });
 });
