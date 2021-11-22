@@ -12,5 +12,5 @@ export const changeFilter = (filter) => ({
 
 export const categories = (meals) => ({
   type: actionTypes.CATEGORY_FILTER,
-  payload: meals,
+  payload: { meals },
 });
