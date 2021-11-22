@@ -1,12 +1,11 @@
-import reducer from '../Redux/reducers/mealReducer';
+import reducer from '../Redux/reducers/category';
 import actionTypes from '../Redux/constants/actionTypes';
-import meals from './Meal.test'
+import meals from './Meal.test';
 
-describe('Meal Reducer', () => {
-  
+describe('Category Reducer', () => {
   it('Should return default state', () => {
     const newState = reducer(undefined, {});
-    expect(newState).toEqual({ myMeals: [] });
+    expect(newState).toEqual({ detail: [] });
   });
 
   it('Should return default state', () => {
@@ -16,16 +15,16 @@ describe('Meal Reducer', () => {
 
   it('Should return new state if action type is recieved', () => {
     const newState = reducer(undefined, {
-      type: actionTypes.SET_MEALS,
+      type: actionTypes.CATEGORY_FILTER,
       payload: meals,
     });
 
-    expect(newState).toEqual({ myMeals: meals });
+    expect(newState).toEqual({ detail: meals });
   });
 
   it('Should return new state if action type is recieved', () => {
     const newState = reducer(undefined, {
-      type: actionTypes.SET_MEALS,
+      type: actionTypes.CATEGORY_FILTER,
       payload: meals,
     });
 
