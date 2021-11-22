@@ -2,7 +2,7 @@
 
 > MEAL RECIPE APP is a meal catalogue app built with React and Redux. This app fetches data from MealDB API and displays the data on the page. The user can filter the foods according to categories.
 
-NB: In this React Capstone project, I was asked to build a CATALOGUE OF DOG CLOTHES but after an unsuccessful search for an API for the app online, i decided to use MealDB API instead.
+NB: In this React Capstone project, I was asked to build a CATALOGUE OF DOG CLOTHES but after an unsuccessful search for an API for the app online, I decided to use MealDB API instead.
 
 ![screenshot](readme.png)
 
