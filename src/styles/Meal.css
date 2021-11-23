@@ -29,13 +29,13 @@
   color: green;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .meal-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     width: 250px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     height: 300px;
     font-size: 16px;
     border: solid rgb(177, 173, 173);
