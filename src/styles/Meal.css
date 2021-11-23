@@ -35,9 +35,11 @@
     width: 320px;
     margin: 0 auto;
   }
+
   .image {
     width: 300px;
   }
+
   .container {
     margin: 0;
   }
@@ -49,9 +51,11 @@
     width: 330px;
     grid-template-columns: 1fr 1fr;
   }
+
   .image {
     width: 300px;
   }
+
   .container {
     margin: 0;
   }
