@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import MealList from '../containers/MealList';
 import MealDetails from '../containers/MealDetails';
 import Error from './Error';
+import About from './About';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<MealList />} />
           <Route path="/Meal/:id" element={<MealDetails />} />
+          <Route exact path="About" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

@@ -17,7 +17,9 @@ const NavBar = () => (
         </Link>
       </header>
       <div>
-        <h3 className="heading">About</h3>
+        <Link className="heading" to="/About">
+          <h3>About</h3>
+        </Link>
       </div>
     </nav>
   </>
