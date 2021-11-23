@@ -32,7 +32,7 @@ const MealDetails = () => {
   const { strMeal, strMealThumb, strInstructions } = details;
   return (
     <div className="details-page">
-      <div>
+      <div className="img-detail">
         <h3 className="text-center">{strMeal}</h3>
         <img className="img" src={strMealThumb} alt={strMeal} />
       </div>

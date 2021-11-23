@@ -33,7 +33,7 @@
   .meal-card {
     display: block;
     width: 320px;
-    margin: 0 auto;
+    margin: 5px auto;
   }
 
   .image {
