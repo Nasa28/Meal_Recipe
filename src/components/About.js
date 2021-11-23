@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div>
+  <div className="about-us">
     <h1 className="about">About Us</h1>
     <p>
       Chop-life kitchen is the best place to get your stomach taken care of. We
