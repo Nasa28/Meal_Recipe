@@ -29,24 +29,29 @@
   color: green;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 692px) {
   .meal-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    display: block;
+    width: 320px;
+    margin: 0 auto;
   }
-
+  .image {
+    width: 300px;
+  }
   .container {
     margin: 0;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 692px) and (max-width: 768px) {
   .meal-card {
     display: grid;
+    width: 330px;
     grid-template-columns: 1fr 1fr;
   }
-
+  .image {
+    width: 300px;
+  }
   .container {
     margin: 0;
   }
