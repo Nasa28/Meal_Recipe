@@ -14,3 +14,13 @@
   color: rgb(102, 92, 92);
   font-size: 24px;
 }
+
+@media only screen and (max-width: 768px) {
+  .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+}

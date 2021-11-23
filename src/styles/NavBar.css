@@ -19,3 +19,11 @@
 .heading {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+.nav {
+  background-color: rgb(136, 221, 136);
+  height: 100px;
+  
+}
+}

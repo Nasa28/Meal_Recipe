@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import MealList from '../containers/MealList';
 import '../styles/NavBar.css';
+import '../styles/MealList.css';
 
 const NavBar = () => (
   <>
