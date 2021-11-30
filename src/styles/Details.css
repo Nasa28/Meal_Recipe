@@ -1,0 +1,44 @@
+.details-page {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.img {
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+}
+
+.description {
+  line-height: 2;
+  margin: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .details-page {
+    display: block;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 920px) {
+  .details-page {
+    display: block;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
